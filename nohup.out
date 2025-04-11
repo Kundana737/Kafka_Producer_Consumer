@@ -1,0 +1,1010 @@
+[main] INFO org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [server5node1.infra.alephys.com:9099, server5node2.infra.alephys.com:9099, server5node3.infra.alephys.com:9099]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-Avro-consumer-group-3.4.0-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = Avro-consumer-group-3.4.0
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = kafka
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = 
+	ssl.engine.factory.class = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = /etc/ssl/kafka.server.keystore.jks
+	ssl.keystore.password = [hidden]
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = /etc/ssl/kafka.server.truststore.jks
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+[main] INFO org.apache.kafka.clients.producer.ProducerConfig - Idempotence will be disabled because acks is set to 1, not set to 'all'.
+[main] INFO org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [server5node1.infra.alephys.com:9099, server5node2.infra.alephys.com:9099, server5node3.infra.alephys.com:9099]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = kafka
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = 
+	ssl.engine.factory.class = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = /etc/ssl/kafka.server.keystore.jks
+	ssl.keystore.password = [hidden]
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = /etc/ssl/kafka.server.truststore.jks
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+[main] INFO org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+[main] INFO org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+[main] INFO io.confluent.kafka.serializers.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://server5node1.infra.alephys.com:8081/]
+	specific.avro.key.type = null
+	specific.avro.reader = false
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+[main] INFO io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.remove.java.properties = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://server5node1.infra.alephys.com:8081/]
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+[main] INFO org.apache.kafka.common.security.authenticator.AbstractLogin - Successfully logged in.
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT refresh thread started.
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT valid starting at: Fri Apr 11 03:42:20 EDT 2025
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT expires: Sat Apr 12 03:42:20 EDT 2025
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT refresh sleeping until: Fri Apr 11 23:23:16 EDT 2025
+[main] INFO org.apache.kafka.common.security.authenticator.AbstractLogin - Successfully logged in.
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT refresh thread started.
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT valid starting at: Fri Apr 11 03:42:20 EDT 2025
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT expires: Sat Apr 12 03:42:20 EDT 2025
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT refresh sleeping until: Fri Apr 11 23:17:38 EDT 2025
+[main] INFO org.apache.kafka.clients.consumer.ConsumerConfig - These configurations '[sasl.kerberos.principal, schema.registry.url, sasl.kerberos.keytab]' were supplied but are not used yet.
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1744357341291
+[main] INFO org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Subscribed to topic(s): topicB
+[main] INFO org.apache.kafka.clients.producer.ProducerConfig - These configurations '[sasl.kerberos.principal, schema.registry.url, sasl.kerberos.keytab]' were supplied but are not used yet.
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1744357341427
+[main] INFO org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Cluster ID: eeWWtaN3R8GjkKOBvqqVxw
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Discovered group coordinator server5node2.infra.alephys.com:9099 (id: 2147483646 rack: null)
+[kafka-producer-network-thread | producer-1] INFO org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: eeWWtaN3R8GjkKOBvqqVxw
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] (Re-)joining group
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Request joining group due to: need to re-join with the given member-id: consumer-Avro-consumer-group-3.4.0-1-f7356ee5-4956-4779-b5d4-3c6c16fdb381
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] (Re-)joining group
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Successfully joined group with generation Generation{generationId=5, memberId='consumer-Avro-consumer-group-3.4.0-1-f7356ee5-4956-4779-b5d4-3c6c16fdb381', protocol='range'}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Finished assignment for group at generation 5: {consumer-Avro-consumer-group-3.4.0-1-f7356ee5-4956-4779-b5d4-3c6c16fdb381=Assignment(partitions=[topicB-0])}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Successfully synced group in generation Generation{generationId=5, memberId='consumer-Avro-consumer-group-3.4.0-1-f7356ee5-4956-4779-b5d4-3c6c16fdb381', protocol='range'}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Notifying assignor about the new Assignment(partitions=[topicB-0])
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Adding newly assigned partitions: topicB-0
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition topicB-0 to the committed offset FetchPosition{offset=54, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[server5node1.infra.alephys.com:9099 (id: 0 rack: null)], epoch=0}}
+[main] INFO com.example.AvroConsumer - Received User: id=100, name=Frank, age=47, partition=0, offset=54
+[main] INFO com.example.AvroConsumer - Received User: id=934, name=Frank, age=91, partition=0, offset=55
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 56
+[main] INFO com.example.AvroConsumer - Received User: id=490, name=Charlie, age=66, partition=0, offset=56
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 57
+[main] INFO com.example.AvroConsumer - Received User: id=483, name=Bob, age=20, partition=0, offset=57
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 58
+[main] INFO com.example.AvroConsumer - Received User: id=282, name=Jack, age=75, partition=0, offset=58
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 59
+[main] INFO com.example.AvroConsumer - Received User: id=169, name=Eve, age=38, partition=0, offset=59
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 60
+[main] INFO com.example.AvroConsumer - Received User: id=677, name=David, age=81, partition=0, offset=60
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 61
+[main] INFO com.example.AvroConsumer - Received User: id=155, name=Bob, age=61, partition=0, offset=61
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 62
+[main] INFO com.example.AvroConsumer - Received User: id=487, name=Eve, age=22, partition=0, offset=62
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 63
+[main] INFO com.example.AvroConsumer - Received User: id=827, name=Frank, age=33, partition=0, offset=63
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 64
+[main] INFO com.example.AvroConsumer - Received User: id=448, name=Eve, age=38, partition=0, offset=64
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 65
+[main] INFO com.example.AvroConsumer - Received User: id=853, name=Alice, age=41, partition=0, offset=65
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 66
+[main] INFO com.example.AvroConsumer - Received User: id=574, name=Alice, age=64, partition=0, offset=66
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 67
+[main] INFO com.example.AvroConsumer - Received User: id=241, name=Henry, age=50, partition=0, offset=67
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 68
+[main] INFO com.example.AvroConsumer - Received User: id=429, name=Bob, age=50, partition=0, offset=68
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 69
+[main] INFO com.example.AvroConsumer - Received User: id=450, name=Ivy, age=63, partition=0, offset=69
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 70
+[main] INFO com.example.AvroConsumer - Received User: id=361, name=Frank, age=85, partition=0, offset=70
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 71
+[main] INFO com.example.AvroConsumer - Received User: id=582, name=Frank, age=50, partition=0, offset=71
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 72
+[main] INFO com.example.AvroConsumer - Received User: id=573, name=Charlie, age=66, partition=0, offset=72
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 73
+[main] INFO com.example.AvroConsumer - Received User: id=452, name=Bob, age=91, partition=0, offset=73
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 74
+[main] INFO com.example.AvroConsumer - Received User: id=574, name=Eve, age=66, partition=0, offset=74
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 75
+[main] INFO com.example.AvroConsumer - Received User: id=988, name=Ivy, age=46, partition=0, offset=75
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 76
+[main] INFO com.example.AvroConsumer - Received User: id=316, name=Frank, age=81, partition=0, offset=76
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 77
+[main] INFO com.example.AvroConsumer - Received User: id=900, name=Henry, age=61, partition=0, offset=77
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 78
+[main] INFO com.example.AvroConsumer - Received User: id=430, name=David, age=48, partition=0, offset=78
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 79
+[main] INFO com.example.AvroConsumer - Received User: id=983, name=Bob, age=56, partition=0, offset=79
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 80
+[main] INFO com.example.AvroConsumer - Received User: id=845, name=David, age=18, partition=0, offset=80
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 81
+[main] INFO com.example.AvroConsumer - Received User: id=131, name=Jack, age=71, partition=0, offset=81
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 82
+[main] INFO com.example.AvroConsumer - Received User: id=31, name=Alice, age=72, partition=0, offset=82
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 83
+[main] INFO com.example.AvroConsumer - Received User: id=913, name=Charlie, age=78, partition=0, offset=83
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 84
+[main] INFO com.example.AvroConsumer - Received User: id=515, name=Bob, age=65, partition=0, offset=84
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 85
+[main] INFO com.example.AvroConsumer - Received User: id=400, name=Grace, age=27, partition=0, offset=85
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 86
+[main] INFO com.example.AvroConsumer - Received User: id=336, name=Frank, age=28, partition=0, offset=86
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 87
+[main] INFO com.example.AvroConsumer - Received User: id=453, name=Eve, age=67, partition=0, offset=87
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 88
+[main] INFO com.example.AvroConsumer - Received User: id=445, name=Ivy, age=78, partition=0, offset=88
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 89
+[main] INFO com.example.AvroConsumer - Received User: id=912, name=Jack, age=25, partition=0, offset=89
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 90
+[main] INFO com.example.AvroConsumer - Received User: id=62, name=Frank, age=39, partition=0, offset=90
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 91
+[main] INFO com.example.AvroConsumer - Received User: id=448, name=Charlie, age=52, partition=0, offset=91
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 92
+[main] INFO com.example.AvroConsumer - Received User: id=852, name=Bob, age=45, partition=0, offset=92
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 93
+[main] INFO com.example.AvroConsumer - Received User: id=331, name=Ivy, age=62, partition=0, offset=93
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 94
+[main] INFO com.example.AvroConsumer - Received User: id=960, name=David, age=90, partition=0, offset=94
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 95
+[main] INFO com.example.AvroConsumer - Received User: id=338, name=Eve, age=26, partition=0, offset=95
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 96
+[main] INFO com.example.AvroConsumer - Received User: id=60, name=Bob, age=68, partition=0, offset=96
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 97
+[main] INFO com.example.AvroConsumer - Received User: id=883, name=Frank, age=80, partition=0, offset=97
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 98
+[main] INFO com.example.AvroConsumer - Received User: id=723, name=Frank, age=74, partition=0, offset=98
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 99
+[main] INFO com.example.AvroConsumer - Received User: id=507, name=Alice, age=86, partition=0, offset=99
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 100
+[main] INFO com.example.AvroConsumer - Received User: id=116, name=Bob, age=90, partition=0, offset=100
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 101
+[main] INFO com.example.AvroConsumer - Received User: id=863, name=Bob, age=96, partition=0, offset=101
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 102
+[main] INFO com.example.AvroConsumer - Received User: id=266, name=Jack, age=82, partition=0, offset=102
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 103
+[main] INFO com.example.AvroConsumer - Received User: id=897, name=Frank, age=67, partition=0, offset=103
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 104
+[main] INFO com.example.AvroConsumer - Received User: id=50, name=Alice, age=96, partition=0, offset=104
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 105
+[main] INFO com.example.AvroConsumer - Received User: id=485, name=Alice, age=79, partition=0, offset=105
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 106
+[main] INFO com.example.AvroConsumer - Received User: id=927, name=Charlie, age=90, partition=0, offset=106
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 107
+[main] INFO com.example.AvroConsumer - Received User: id=470, name=Frank, age=60, partition=0, offset=107
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 108
+[main] INFO com.example.AvroConsumer - Received User: id=958, name=Frank, age=23, partition=0, offset=108
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topicB partition 0 offset 109
+[main] INFO com.example.AvroConsumer - Received User: id=501, name=Bob, age=41, partition=0, offset=109
+[main] INFO org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [server5node1.infra.alephys.com:9099, server5node2.infra.alephys.com:9099, server5node3.infra.alephys.com:9099]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-Avro-consumer-group-3.4.0-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = Avro-consumer-group-3.4.0
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = kafka
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = 
+	ssl.engine.factory.class = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = /etc/ssl/kafka.server.keystore.jks
+	ssl.keystore.password = [hidden]
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = /etc/ssl/kafka.server.truststore.jks
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+[main] INFO org.apache.kafka.clients.producer.ProducerConfig - Idempotence will be disabled because acks is set to 1, not set to 'all'.
+[main] INFO org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [server5node1.infra.alephys.com:9099, server5node2.infra.alephys.com:9099, server5node3.infra.alephys.com:9099]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = kafka
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = 
+	ssl.engine.factory.class = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = /etc/ssl/kafka.server.keystore.jks
+	ssl.keystore.password = [hidden]
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = /etc/ssl/kafka.server.truststore.jks
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+[main] INFO org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [server5node1.infra.alephys.com:9099, server5node2.infra.alephys.com:9099, server5node3.infra.alephys.com:9099]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-Avro-consumer-group-3.4.0-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = Avro-consumer-group-3.4.0
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = kafka
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = 
+	ssl.engine.factory.class = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = /etc/ssl/kafka.server.keystore.jks
+	ssl.keystore.password = [hidden]
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = /etc/ssl/kafka.server.truststore.jks
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+[main] INFO org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+[main] INFO org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+[main] INFO org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector - initializing Kafka metrics collector
+[main] INFO io.confluent.kafka.serializers.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://server5node1.infra.alephys.com:8081/]
+	specific.avro.key.type = null
+	specific.avro.reader = false
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+[main] INFO io.confluent.kafka.serializers.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://server5node1.infra.alephys.com:8081/]
+	specific.avro.key.type = null
+	specific.avro.reader = false
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+[main] INFO io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.remove.java.properties = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://server5node1.infra.alephys.com:8081/]
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+[main] INFO org.apache.kafka.common.security.authenticator.AbstractLogin - Successfully logged in.
+[main] INFO org.apache.kafka.common.security.authenticator.AbstractLogin - Successfully logged in.
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT refresh thread started.
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT refresh thread started.
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT valid starting at: Fri Apr 11 05:11:13 EDT 2025
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT expires: Sat Apr 12 05:11:13 EDT 2025
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT refresh sleeping until: Sat Apr 12 00:44:08 EDT 2025
+[main] INFO org.apache.kafka.common.security.authenticator.AbstractLogin - Successfully logged in.
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT valid starting at: Fri Apr 11 05:11:13 EDT 2025
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT expires: Sat Apr 12 05:11:13 EDT 2025
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT refresh sleeping until: Sat Apr 12 00:40:26 EDT 2025
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT refresh thread started.
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT valid starting at: Fri Apr 11 05:11:13 EDT 2025
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT expires: Sat Apr 12 05:11:13 EDT 2025
+[kafka-kerberos-refresh-thread-kafka/server5node2.infra.alephys.com@ALEPHYS.COM] INFO org.apache.kafka.common.security.kerberos.KerberosLogin - [Principal=kafka/server5node2.infra.alephys.com@ALEPHYS.COM]: TGT refresh sleeping until: Sat Apr 12 01:19:53 EDT 2025
+[main] INFO org.apache.kafka.clients.consumer.ConsumerConfig - These configurations '[sasl.kerberos.principal, schema.registry.url, sasl.kerberos.keytab]' were supplied but are not used yet.
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1744362673825
+[main] INFO org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Subscribed to topic(s): topic1
+[main] INFO org.apache.kafka.clients.consumer.ConsumerConfig - These configurations '[sasl.kerberos.principal, schema.registry.url, sasl.kerberos.keytab]' were supplied but are not used yet.
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1744362674034
+[main] INFO org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Subscribed to topic(s): topic1
+[main] INFO org.apache.kafka.clients.producer.ProducerConfig - These configurations '[sasl.kerberos.principal, schema.registry.url, sasl.kerberos.keytab]' were supplied but are not used yet.
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1744362674143
+[main] INFO org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Cluster ID: eeWWtaN3R8GjkKOBvqqVxw
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Discovered group coordinator server5node2.infra.alephys.com:9099 (id: 2147483646 rack: null)
+[main] INFO org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Cluster ID: eeWWtaN3R8GjkKOBvqqVxw
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] (Re-)joining group
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Discovered group coordinator server5node2.infra.alephys.com:9099 (id: 2147483646 rack: null)
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Request joining group due to: need to re-join with the given member-id: consumer-Avro-consumer-group-3.4.0-1-b42a6539-59c8-401e-a856-87e270557571
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] (Re-)joining group
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] (Re-)joining group
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Successfully joined group with generation Generation{generationId=1, memberId='consumer-Avro-consumer-group-3.4.0-1-b42a6539-59c8-401e-a856-87e270557571', protocol='range'}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Finished assignment for group at generation 1: {consumer-Avro-consumer-group-3.4.0-1-b42a6539-59c8-401e-a856-87e270557571=Assignment(partitions=[topic1-0])}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Successfully synced group in generation Generation{generationId=1, memberId='consumer-Avro-consumer-group-3.4.0-1-b42a6539-59c8-401e-a856-87e270557571', protocol='range'}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Notifying assignor about the new Assignment(partitions=[topic1-0])
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Adding newly assigned partitions: topic1-0
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Found no committed offset for partition topic1-0
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Request joining group due to: need to re-join with the given member-id: consumer-Avro-consumer-group-3.4.0-1-8cef9207-8392-442f-a3fa-920007338cb7
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] (Re-)joining group
+[kafka-producer-network-thread | producer-1] INFO org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: eeWWtaN3R8GjkKOBvqqVxw
+[main] INFO org.apache.kafka.clients.consumer.internals.SubscriptionState - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Resetting offset for partition topic1-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[server5node3.infra.alephys.com:9099 (id: 2 rack: null)], epoch=0}}.
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topic1 partition 0 offset 0
+[main] INFO com.example.AvroConsumer - Received User: id=280, name=Alice, age=89, partition=0, offset=0
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topic1 partition 0 offset 1
+[main] INFO com.example.AvroConsumer - Received User: id=722, name=Henry, age=60, partition=0, offset=1
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topic1 partition 0 offset 2
+[main] INFO com.example.AvroConsumer - Received User: id=620, name=Jack, age=31, partition=0, offset=2
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Request joining group due to: group is already rebalancing
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Revoke previously assigned partitions topic1-0
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] (Re-)joining group
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Successfully joined group with generation Generation{generationId=2, memberId='consumer-Avro-consumer-group-3.4.0-1-b42a6539-59c8-401e-a856-87e270557571', protocol='range'}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Successfully joined group with generation Generation{generationId=2, memberId='consumer-Avro-consumer-group-3.4.0-1-8cef9207-8392-442f-a3fa-920007338cb7', protocol='range'}[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Finished assignment for group at generation 2: {consumer-Avro-consumer-group-3.4.0-1-b42a6539-59c8-401e-a856-87e270557571=Assignment(partitions=[]), consumer-Avro-consumer-group-3.4.0-1-8cef9207-8392-442f-a3fa-920007338cb7=Assignment(partitions=[topic1-0])}
+
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Successfully synced group in generation Generation{generationId=2, memberId='consumer-Avro-consumer-group-3.4.0-1-b42a6539-59c8-401e-a856-87e270557571', protocol='range'}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Notifying assignor about the new Assignment(partitions=[])
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Adding newly assigned partitions: 
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Successfully synced group in generation Generation{generationId=2, memberId='consumer-Avro-consumer-group-3.4.0-1-8cef9207-8392-442f-a3fa-920007338cb7', protocol='range'}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Notifying assignor about the new Assignment(partitions=[topic1-0])
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-Avro-consumer-group-3.4.0-1, groupId=Avro-consumer-group-3.4.0] Adding newly assigned partitions: topic1-0
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerUtils - Setting offset for partition topic1-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[server5node3.infra.alephys.com:9099 (id: 2 rack: null)], epoch=0}}
+[kafka-producer-network-thread | producer-1] INFO com.example.AvroProducer - Sent Avro message to topic topic1 partition 0 offset 3
+[main] INFO com.example.AvroConsumer - Received User: id=299, name=Bob, age=19, partition=0, offset=3
